@@ -10,16 +10,4 @@ function draw () {
   text('Velkommen til Programmering', width / 2, height / 2)
 }
 
-function preload () {
-
-}
-
-function mousePressed () {
-
-}
-
-function keyPressed () {
-
-}
-
-export { setup, draw, preload, mousePressed, keyPressed }
+export { setup, draw }
