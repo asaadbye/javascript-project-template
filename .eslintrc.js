@@ -11,5 +11,7 @@ module.exports = {
     sourceType: 'module'
   },
   rules: {
-  }
+  },
+  // Inkluder p5.js-filer fra node_modules
+  include: ['node_modules/p5/lib/**/*.js']
 }

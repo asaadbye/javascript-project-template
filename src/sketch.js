@@ -5,5 +5,3 @@ window.setup = setup
 window.draw = draw
 window.mousePressed = mousePressed
 window.keyPressed = keyPressed
-
-setup()
