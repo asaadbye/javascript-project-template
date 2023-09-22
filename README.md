@@ -15,40 +15,44 @@ Dette er et JavaScript-projekt, som er sat op med en simpel struktur, så det er
 
 
 ## Opsætning
-
-- Klon projektet
-- Åben projektet i Visual Studio Code
-- Åben terminalen i Visual Studio Code
+- Installér Visual Studio Code.
+- Installér Node.js.
+- Installér Git.
+- Åbn Visual Studio Code.
+- Klon dette projekt fra versionskontrolmenuen.
+- Åben mappen med det klonede projekt.
+- Start en ny terminal.
 - Skriv `npm install` i terminalen
 
-# Kør JavaScript-kode i debug-mode
+# Hvordan afvikler jeg JavaScript-kode uden brug af min browser?
 
 - Åbn f.eks. `test.js`.
 - Tryk på F5 for at starte debugging.
 
-# p5.js
+# Hvordan laver jeg en p5.js-sketch?
 - Start Live Server
 - Åben `index.html` i browseren (localhost:5500)
 - Nu bliver `mysketch.js` vist.
-- Hvis du ønsker at lave en ny sketch, så opret en ny fil, f.eks. `sketch2.js` og 
-  tilføj følgende kode:
+- For at lave en helt ny sketch gør følgende:
+  - Opret en ny fil, f.eks. `sketch2.js`.
+  - Tilføj følgende kode til `sketch2.js`:
+    
+    ```javascript
+    function setup() {
+      createCanvas(400, 400);
+    }
   
-  ```javascript
-  function setup() {
-    createCanvas(400, 400);
-  }
+    function draw() {
+      background(220);
+    }
+  
+    export default { setup, draw };
+    ```
+  - Åbn `sketch.js` og tilføj følgende `import`:
 
-  function draw() {
-    background(220);
-  }
-
-  export default { setup, draw };
-  ```
-- Åbn `sketch.js` og tilføj følgende `import`:
-
-  ```javascript
-  import { setup, draw } from "./sketch2.js";
-  ```
+    ```javascript
+    import { setup, draw } from "./sketch2.js";
+    ```
 
 
 
