@@ -1,1 +1,2 @@
-console.log('Hej verden!')
+const dinfar = 'Hej verden!'
+console.log(dinfar)
